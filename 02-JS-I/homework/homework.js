@@ -85,20 +85,31 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num<90){
+    return true;
+
+  } else {
+    return false;
+  }
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num>50){
+    return true;
+
+  } else {
+    return false;
+  }
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  var resultado = x % y;
+  return resultado;
 }
 
 function esPar(num) {
@@ -119,37 +130,44 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+  var valor= Math.pow(num,2);
+  return valor;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  var valor= Math.pow(num,3);
+  return valor;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  var valor = Math.pow(num,exponent);
+  return valor;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  var valor= Math.round(num);
+  return valor;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  var valor= Math.ceil(num);
+  return valor;
 }
+
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  var numero = Math.random();
+  return numero;
 }
 
 function esPositivo(numero) {
@@ -157,6 +175,18 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  if(numero > 0){ 
+   var valor = "Es positivo";
+   return valor;
+
+  } else if(numero < 0) {
+    var valor= "Es negativo";
+    return valor;
+  
+  } else {
+    return false;
+  }
+    
   
 }
 
