@@ -78,7 +78,13 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (str1.length=str2.length)
+  {
+    return true;
   
+  } else{
+    return false;
+  }
 }
 
 function menosQueNoventa(num) {
@@ -200,14 +206,16 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  var completo = nombre + apellido;
+  return completo;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+   
+
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -245,7 +253,13 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+    if (letra='a', letra='e', letra='i', letra='o', letra='u') {
+    return  'Es vocal';
+   } else if (console.log(letra.length) != 1) {
+    return 'Dato incorrecto';
+   }else{
+    return 'Dato incorrecto';
+   }
 }
 
 
